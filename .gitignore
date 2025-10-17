@@ -41,12 +41,14 @@ secrets/
 *.db
 *.sqlite
 *.sqlite3
+financeai.db
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+.DS_Store
 
 # OS
 .DS_Store
