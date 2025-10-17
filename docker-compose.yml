@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  financeai-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./data/financeai.db
+    volumes:
+      - ./data:/app/data
+      - ./app:/app/app
+    restart: unless-stopped
+    
+  financeai-frontend:
+    image: nginx:alpine
+    ports:
+      - "3000:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html
+    depends_on:
+      - financeai-api
+    restart: unless-stopped
+
+volumes:
+  data:

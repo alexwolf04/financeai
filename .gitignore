@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Environment Variables
+.env
+.env.local
+.env.production
+.env.development
+
+# Secrets and Keys
+*.key
+*.pem
+secrets/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# ML Models
+*.pkl
+*.joblib
+models/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Docker
+.dockerignore
+
+# Node modules (if using npm for frontend tools)
+node_modules/
+
+# Coverage reports
+htmlcov/
+.coverage
+.pytest_cache/
